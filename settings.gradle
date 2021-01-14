@@ -1,0 +1,2 @@
+rootProject.name='ISKOOL-T'
+include ':app'

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ExamActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddExam"
+        android:text="Add Exam"/>
+    <FrameLayout
+        android:id="@+id/TopicFragContainer"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/llAddExam"
+>
+
+        <EditText
+            android:id="@+id/etExamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Exam Name"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnAddQuestionPaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AddQuestionPaper" />
+
+        <Button
+            android:id="@+id/btnAddDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Date " />
+
+        <Button
+            android:id="@+id/btnSetTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Start Time" />
+
+        <EditText
+            android:id="@+id/etDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Duration"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done" />
+
+    </LinearLayout>
+
+</LinearLayout>
